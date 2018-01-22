@@ -1,0 +1,57 @@
+*{
+	margin:5px;
+	padding:5px;
+}
+
+body{
+	background-color:#aaffaa;
+}
+
+header{
+	height:60px;
+	font-name: 'Arial Narrow';
+	font-weight:350;	
+	padding-top:25px;
+	padding-bottom:15px;
+	margin-bottom:0px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+footer{
+	margin-top:0px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+header,footer{
+	background-color:#ffaaff;
+	text-align:center;
+}
+
+#regSection{
+	min-height:400px;
+	background-color:#cfffcc;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#regSection h2 {
+	border-bottom: 1px dashed #000000;
+}
+
+#regTable{
+	border-radius:15px;
+	border:1px solid black;
+	margin:auto;
+}
+
+#regTable th{
+	text-align:left;
+}
+
+[colspan]{
+	text-align:right;
+}
+
+#
