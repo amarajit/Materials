@@ -10,11 +10,10 @@
     <div id="count"></div>
     <div id="date"></div>
 
-    <p />
+	<p>
     <button onclick="increment()">Get Inforation</button>
-    <p />
     <button onclick="clearStorage()">Clear Local Storage</button>
-
+	</p>
 
     <script>
         var count = document.getElementById("count");
@@ -25,8 +24,8 @@
             // clear text
             count.innerHTML = "";
             date.innerHTML = "";
-
         }
+		
         function increment() {
 
             if (localStorage.button_count) {

@@ -6,18 +6,21 @@
 <body>
 <div style="float:left;width:300px">
 <h3>Available Courses </h3>
-<img title="HTML5" src="html5.jpg" width="75" height="75"  draggable="true"  ondragstart="startDrag(event)" />
+<img title="HTML5" src="html5.jpg" width="75" height="75"  draggable="true"  
+ondragstart="startDrag(event)" />
 <p/>
-<img title="CSS3" src="css3.jpg" width="75" height="75" draggable="true"  ondragstart="startDrag(event)" />
+<img title="CSS3" src="css3.jpg" width="75" height="75" draggable="true"  
+ondragstart="startDrag(event)" />
 <p/>
 <img title="JQuery" src="jquery.jpg" width="75" height="75" draggable="true"  ondragstart="startDrag(event)" />
 </div>
 
-
 <div style="float:left">
  <h3>Selected Courses </h3>
- <select id="courses" size="5" style="width:300px;height:200px" ondrop="drop(event)" ondragover="allowDrop(event)">  
+ <select id="courses" size="5" style="width:300px;height:200px" 
+	ondrop="drop(event)" ondragover="allowDrop(event)">  
  </select>
+ 
  <p/>
  <button onclick="clearItems()">Clear All</button>
 </div>
@@ -30,7 +33,6 @@ function clearItems(obj)
     for (i = list.options.length - 1; i >= 0 ; i -- ) 
           list.options.remove(i);
 }
-
 
 function startDrag(e) {
     e.dataTransfer.dropEffect = "link";

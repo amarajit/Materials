@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Geo Location</title>
-   
 </head>
 <body>
     <div id="divInfo"></div>
     <button onclick="getlocation()">Get Location</button>
-
+	<iframe style="width:100%;min-height:200px" id="locFrame">
+	</iframe>
      <script type="text/javascript">
          var divInfo = document.getElementById("divInfo");
          function getlocation() {
@@ -21,6 +21,10 @@
          function showPosition(position) {
              var loc = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude ;
              divInfo.innerHTML = loc;
+			 
+			 var frm = document.getElementById("locFrame");
+			 frm.src="https://www.google.com/maps/search/?api=1&query="+position.coords.latitude+","+position.coords.longitude;
+			 
         }
 
          function errorFun(error) {
