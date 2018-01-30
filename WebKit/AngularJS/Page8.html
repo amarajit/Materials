@@ -27,7 +27,7 @@
 					<td />
 					<td><Button ng-click="addItem()">ADD</Button></td>
 				</tr>
-				<tr ng-repeat="item in items">
+				<tr ng-repeat="item in items">					
 					<td ng-bind="item.id" />
 					<td ng-bind="item.name" />
 					<td ng-bind="item.rate" />
@@ -39,6 +39,17 @@
 					<td colspan="4" style="text-align:right">Total </td>
 					<td ng-bind="totalCost"/>
 				</tr>
+			</table>
+		</div>
+		<hr />
+		<div ng-controller="shopping" ng-init="searchIndex=0">
+			<label>Enter a item index: 
+				<input type="number" ng-model="searchIndex"/>
+			</label>
+			<table>
+				<tr><td>ID</td><td ng-bind="items[searchIndex].id" /></tr>
+				<tr><td>Name</td><td ng-bind="items[searchIndex].name" /></tr>
+				<tr><td>Rate</td><td ng-bind="items[searchIndex].rate" /></tr>
 			</table>
 		</div>
 		

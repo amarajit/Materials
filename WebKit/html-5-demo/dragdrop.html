@@ -36,7 +36,9 @@ function clearItems(obj)
 
 function startDrag(e) {
     e.dataTransfer.dropEffect = "link";
-    e.dataTransfer.setData("title", e.target.title);
+	//e.dataTransfer.dropEffect = "move";
+	//e.dataTransfer.dropEffect = "copy";
+    e.dataTransfer.setData("title", e.target.title);	
 }
 
 function allowDrop(e)

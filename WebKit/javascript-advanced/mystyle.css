@@ -9,6 +9,10 @@ body{
 	color:#ff0000;
 }
 
-div{
-	
+#tbodyItems tr td{
+	border-bottom: 1px solid #ffffff;
+}
+
+#tbodyItems tr:first-child td{
+	border-top: 1px solid #ffffff;
 }

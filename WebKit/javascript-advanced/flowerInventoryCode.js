@@ -86,6 +86,8 @@
 				row.append(col5);
 				row.append(col6);
 				
+				//row.style = "border-bottom:1px solid #ffffff";
+				
 				btn.onclick = function(eventObject){
 								eventObject.target.
 								parentElement.parentElement.remove();
