@@ -1,8 +1,10 @@
 
 $(function(){			
 	$("nav.menuBar>ol>li>ol").hide();
+	
 	$("nav.menuBar>ol>li").mouseenter(function(){
 		var menu = $(this).children('ol');
+		
 		if(menu.hasClass('fade'))
 			menu.fadeIn();
 		else if(menu.hasClass('slide'))

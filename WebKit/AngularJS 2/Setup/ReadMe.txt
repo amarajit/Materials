@@ -9,7 +9,7 @@ Inital Setup
 	
 		npm install -g typescript
 
-4. Install Angular CLIT 
+5. Install Angular CLI
 		
 		npm install -g angular-cli
 
