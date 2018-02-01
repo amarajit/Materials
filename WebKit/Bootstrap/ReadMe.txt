@@ -111,6 +111,16 @@ Bottstrap image formating classes
 .img-thumbnail	Shapes the image to a thumbnail	
 .img-responsive	Makes an image responsive 
 
+Bottstrap button formating classes
+------------------------------------------
+	
+	.btn
+	.btn-primary
+	.btn-success
+	.btn-danger
+	.btn-warning
+	.btn-small
+	
 
 Jumbotron
 ----------------------------------
