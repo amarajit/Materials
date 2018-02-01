@@ -30,6 +30,40 @@ ProjectFolder
 
 
 
+Angular CLI Commands
+------------------------------
+To get help
+	ng help
+	
+To create a new proejct and start
 
+	ng new PROJECT-NAME
+	cd PROJECT-NAME
+	ng serve
+
+To change dev server ip or port
+
+	ng serve --host <ip> --port <port>
+
+To generate any angular object 
+	
+	ng g <objectType> object-name
+	ng generate <objectType> object-name
+	
+	where objectType can be
+		component
+		directive
+		pipe
+		service
+		class
+		interface
+		enum
+		module
+		gaurd
+		
+		
+
+	
+	
 	
 

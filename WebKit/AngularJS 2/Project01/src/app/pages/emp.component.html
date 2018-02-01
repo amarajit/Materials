@@ -1,0 +1,38 @@
+<h3>Profile Report</h3>
+<table>
+    <tr><td><strong>Full Name</strong></td>
+        <td>{{salutation}} {{firstName}} {{lastName}}</td></tr>
+    <tr><td><strong>Date Of Birth</strong></td>
+        <td>{{dateOfBirth}}</td></tr>
+    <tr><td><strong>Marital Status</strong></td>
+        <td>{{isMarried?'Married':'UnMarried'}}</td></tr>
+    <tr *ngIf="isMarried">
+        <td><strong>Spouse</strong></td>
+        <td>{{spouse}}</td></tr>
+    <tr><td><strong>Designation</strong></td>
+        <td>{{designation}}</td></tr>
+    <tr><td><strong>Basic</strong></td>
+            <td [ngSwitch]="designation">
+                    <span *ngSwitchCase="'Admin'">Inr. 10 L</span>
+                    <span *ngSwitchCase="'Manager'">Inr. 8 L</span>
+                    <span *ngSwitchCase="'SrProg'">Inr. 5 L</span>
+                    <span *ngSwitchCase="'JrProg'">Inr. 3 L</span>
+                    <span *ngSwitchDefault>UnKnown</span>
+            </td></tr>        
+</table>
+
+<h3>Profile Editor</h3>
+<form>        
+    <label>First Name:<input type="text" [(ngModel)]="firstName" name="fnm"/></label> <br />
+    <label>Last Name:<input type="text" [(ngModel)]="lastName" name="lnm"/></label> <br />
+    <label>Date Of Birth:<input type="date" [(ngModel)]="dateOfBirth" name="dob"/></label> <br />
+    <label><input type="checkbox" [(ngModel)]="isMarried" name="mtrs"/>I am married</label> <br />
+    <label *ngIf="isMarried">Spouse Name:<input type="text" [(ngModel)]="spouse" name="sp"/></label> <br />
+    <label>Salutation: 
+        <select [(ngModel)]="salutation" name="sal">
+            <option value="">---SELECT--</option>
+            <option *ngFor="let sal of possibleSalutations">{{sal}}</option>
+        </select>
+    </label><br/>
+    <label>Designation:<input type="text" [(ngModel)]="designation" name="desg"/></label> <br />
+</form>
