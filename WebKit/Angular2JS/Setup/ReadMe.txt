@@ -28,7 +28,35 @@ ProjectFolder
 	
 2. run 'npm install 'on the ProjectFolder.
 
+Angular2 Directives
+----------------------------------
+	*ngModule
+	[ngModel]
+	[ngClass]
+	[ngStyle]
+	*ngIf
+	*ngFor
+	[ngSwitch]
+	*ngSwitchCase
+	*ngSwitchDefault
+	
+Angular 2 Pipes (Angular 1 Filters)
+--------------------------------------------
 
+Filter/Pipe Name		1.x	 2
+-------------------------------
+currency				✓	✓
+date					✓	✓
+uppercase				✓	✓
+json					✓	✓
+limitTo					✓	✓
+lowercase				✓	✓
+number					✓	
+orderBy					✓	
+filter					✓	
+decimal						✓
+percent						✓
+async						✓
 
 Angular CLI Commands
 ------------------------------

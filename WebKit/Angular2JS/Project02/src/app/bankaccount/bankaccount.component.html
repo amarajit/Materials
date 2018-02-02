@@ -1,0 +1,23 @@
+
+<form>
+  <label>Enter Principle: 
+    <input type="number" name="princ" [(ngModel)]="principle" />
+  </label> <br />
+  <label>Enter Interest Rate: 
+    <input type="number" name="princ" [(ngModel)]="rateOfInterest" />
+  </label> <br />
+  <label>Enter Time Period: 
+    <input type="number" name="princ" [(ngModel)]="timePeriod" />
+  </label> <br />
+  <button type="button" (click)="compute()" name="btn1">Compute</button> <br />
+  <label>Simple Interest: 
+    <input type="number" name="princ" [(ngModel)]="si" readonly/>
+  </label> <br />
+  <label>Amount: 
+    <input type="number" name="princ" [(ngModel)]="amount" readonly/>
+  </label> <br />
+</form>
+
+<p>
+  You are bund to pay {{amount | number:'2.1-2'}} in total.
+</p>

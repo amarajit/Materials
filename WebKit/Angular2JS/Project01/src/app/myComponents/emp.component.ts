@@ -14,7 +14,7 @@ export class EmpComponent  {
     spouse : string;
     designation: string;
 
-    possibleSalutations;
+    possibleSalutations : string[];
 
     constructor(){
         this.salutation='Mr.';

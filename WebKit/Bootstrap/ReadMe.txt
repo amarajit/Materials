@@ -111,20 +111,213 @@ Bottstrap image formating classes
 .img-thumbnail	Shapes the image to a thumbnail	
 .img-responsive	Makes an image responsive 
 
-Bottstrap button formating classes
+Bootstrap button formating classes
 ------------------------------------------
 	
 	.btn
+	.btn-default
 	.btn-primary
 	.btn-success
-	.btn-danger
+	.btn-info
 	.btn-warning
-	.btn-small
+	.btn-danger
+	.btn-link
+		
+	.btn-group		groups a set of buttons in a packed contaienr.
+	.btn-group-lg
+	.btn-group-vertical
+	.btn-group-justified
 	
+form styling
+------------------------------
+	.form-control	for form elements for auto bootstrap styling
+	
+	Bootstrap provides three types of form layouts:
 
-Jumbotron
+		Vertical form 		(this is default)
+		Inline form			.form-inline
+		Horizontal form		Add class .form-horizontal to the <form> element
+							Add class .control-label to all <label> elements
+	
+	Standard rules for all three form layouts:
+
+		Wrap labels and form controls in <div class="form-group"> (needed for optimum spacing)
+		Add class .form-control to all textual <input>, <textarea>, and <select> elements
+
+	
+	
+Special Contaienrs
 ----------------------------------
-A jumbotron indicates a big box for calling extra attention to some special content or information.
+ .jumbotron 	 displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+ 
+ .well class adds a rounded border around an element with a gray background color and some padding:
 
-A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+	alert alert-success
+	alert alert-info
+	alert alert-warning
+	alert alert-danger
+		
+		will create a closable alert container, add
+		fade and in classes for fade effects.
+		
+Creating a pagination bar
+------------------------------------
 
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+
+
+More about grid system (updated from bootstrap4)
+-------------------------------------
+
+Auto-layout columns
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      1 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+  </div>
+</div>
+
+Setting one column width
+	
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-5">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+Variable width content
+
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      1 of 3
+    </div>
+    <div class="col-12 col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-12 col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+Align cols in a row
+-------------------------------
+
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col align-self-start">
+      One of three columns
+    </div>
+    <div class="col align-self-center">
+      One of three columns
+    </div>
+    <div class="col align-self-end">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+Offset - move the columns to a disired cell start
+------------------------------------------------------
+
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+</div>
