@@ -1,10 +1,19 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef, Input, AfterViewInit } from '@angular/core';
 
 @Directive({
   selector: '[appToday]'
 })
-export class TodayDirective {
-
-  constructor() { }
-
+export class TodayDirective implements AfterViewInit {
+  @Input() appToday: string;
+  constructor(private elRef: ElementRef) { 
+  }
+  ngAfterViewInit(): void {
+    var d = new Date();
+    if(this.appToday=="local-date")
+      this.elRef.nativeElement.innerHTML = d.toLocaleDateString();
+    else if(this.appToday=="local-time")
+      this.elRef.nativeElement.innerHTML = d.toLocaleTimeString();
+    else
+      this.elRef.nativeElement.innerHTML = d.toString();
+  }
 }

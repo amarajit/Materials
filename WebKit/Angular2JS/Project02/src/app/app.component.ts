@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { TodayDirective } from './today.directive';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
