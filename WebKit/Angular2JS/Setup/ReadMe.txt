@@ -89,7 +89,54 @@ To generate any angular object
 		module
 		gaurd
 		
-		
+Routing
+--------------------------
+
+<base href="/">
+
+imports for app.module.ts:
+import { RouterModule, Routes } from '@angular/router';
+
+confiugreing routes in app.module.ts:
+const appRoutes: Routes = [
+  { path: 'crisis-center', component: CrisisListComponent },
+  { path: 'hero/:id',      component: HeroDetailComponent },
+  {
+    path: 'heroes',
+    component: HeroListComponent,
+    data: { title: 'Heroes List' }
+  },
+  { path: '',
+    redirectTo: '/heroes',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PageNotFoundComponent }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
+    // other imports here
+  ],
+  ...
+})
+export class AppModule { }
+
+Including resultant content in app module template:
+<router-outlet></router-outlet>
+
+Example:
+	 <h1>Angular Router</h1>
+	  <nav>
+		<a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+		<a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+	  </nav>
+	  <router-outlet></router-outlet>
+
+
 
 	
 	

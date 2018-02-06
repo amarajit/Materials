@@ -145,7 +145,6 @@ form styling
 		Add class .form-control to all textual <input>, <textarea>, and <select> elements
 
 	
-	
 Special Contaienrs
 ----------------------------------
  .jumbotron 	 displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
@@ -170,8 +169,6 @@ Creating a pagination bar
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
 </ul>
-
-
 
 More about grid system (updated from bootstrap4)
 -------------------------------------

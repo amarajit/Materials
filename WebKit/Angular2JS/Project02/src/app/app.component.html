@@ -6,10 +6,16 @@
 <h3 appToday="{{'local-time'}}" ></h3>
 <h3 [appToday]="local-date" ></h3>
 <hr />
-<app-greet-user></app-greet-user>
-<hr />
-<app-bankaccount>Loading bank account</app-bankaccount>
-<hr />
-<app-events-demo></app-events-demo>
-<hr />
-<app-pipe-demo></app-pipe-demo>
+<nav>
+    <a routerLink="">Home Component</a>
+    <span> | </span>
+  <a routerLink="/greet">Greet Component</a>
+  <span> | </span>
+  <a routerLink="/bank">Bank Component</a>
+  <span> | </span>
+  <a routerLink="/pipe">Pipe Component</a>
+  <span> | </span>
+  <a routerLink="/event">Event Component</a>
+  <span> | </span>
+</nav>
+<router-outlet></router-outlet>
