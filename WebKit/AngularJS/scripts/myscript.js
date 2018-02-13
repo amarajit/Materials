@@ -89,12 +89,10 @@
    };
 });
 
-
 var myController4 = myApp.controller('ctrl4',function($scope,$rootScope){
 	$rootScope.message1="Hello from root scope controller 4";
 	$scope.message2="Hello from scope controller 4";
 });
-
 
 var myController5 = myApp.controller('ctrl5',function($scope,$rootScope){
 	$rootScope.message3="Hello from root scope controller 5";

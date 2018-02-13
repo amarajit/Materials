@@ -28,8 +28,8 @@
 					<td><Button ng-click="addItem()">ADD</Button></td>
 				</tr>
 				<tr ng-repeat="item in items">
-					<td ng-bind="item.id" />
-					<td ng-bind="item.name|uppercase" />
+					<td>{{item.id}}</td>
+					<td>{{item.name|uppercase}}</td>
 					<td ng-bind="item.rate|currency:'INR.'" />
 					<td><input type="number" ng-model="item.qty"  ng-change="computeAmount(item)"/></td>
 					<td ng-bind="item.amt|currency:'INR.'" />
@@ -41,6 +41,5 @@
 				</tr>
 			</table>
 		</div>
-		
 	</body>
 </html>

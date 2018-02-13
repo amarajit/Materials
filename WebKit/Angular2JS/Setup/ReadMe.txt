@@ -1,10 +1,14 @@
 
-
-Inital Setup 
+Initial Setup 
 -----------------------
 1. Downoad and install npm
+	https://www.npmjs.com/package/download
+	(or)
+	https://nodejs.org/en/download/
 2. Download and install VSCode (Visual Studio Code)
+	https://code.visualstudio.com/
 3. Download and install github cli (and github gui optional)
+	
 4. Install Typescript through npm as below:
 	
 		npm install -g typescript
@@ -14,7 +18,7 @@ Inital Setup
 		npm install -g angular-cli
 
 Creating Angular 2 Folder Structure
--=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-==-=-=-=-=-=-=--------
 
 1. Clone quick start from https://github.com/angular/quickstart
 
@@ -31,10 +35,10 @@ ProjectFolder
 Angular2 Directives
 ----------------------------------
 	*ngModule
-	[ngModel]
+	[ngModel] = "empId"
 	[ngClass]
 	[ngStyle]
-	*ngIf
+	*ngIf	
 	*ngFor
 	[ngSwitch]
 	*ngSwitchCase
@@ -137,8 +141,32 @@ Example:
 	  <router-outlet></router-outlet>
 
 
+Angular 4 Features and Performance
+As compared to Angular 2, there are lots of new items added to this list. Not just new features but also some tweaks that improved old capabilities. So let's move on to see the list.
 
-	
+Smaller and Faster:
+With Angular 4, programs will consume less space and run quicker than previous versions. And the staff is focused on continually making additional improvements.
+
+View Engine:
+They have made adjustments under to hood to exactly what AOT created code looks like. These modifications decrease the size of the generated code for those parts by approximately 60 percent. The more complicated the templates are, the greater the savings.
+
+Animation Package:
+They've pulled animations from the Angular core and set them in their own package. This means that in case you don't use animations, this excess code won't end up on your creation packages.
+This feature will also enable you to easily find docs and to take advantage of auto-completion. You may add animations to the main NgModule by importing the Browser Animations Module out of @angular/platform-browser/animations.
+
+Improved *ngIf and *ngFor:
+The template binding syntax currently supports a few helpful alterations. Now you can utilize an if/else design syntax, and assign local variables like if to unroll an observable.
+
+Angular Universal:
+This release now contains the results of the external and internal work from the Universal team throughout the last few months. The vast majority of this Universal code is currently located in @angular/platform-server.
+
+To learn more about using Angular Universal, have a look at the new renderModuleFactory method in @angular/platform-server, or Rob Wormald's Demo Repository. More documentation and code samples will come.
+
+TypeScript 2.1 and 2.2 Compatibility:
+The group has upgraded Angular into a more recent version of TypeScript. This will enhance the rate of ngc and you'll receive far better type checking during your program.
+
+Source Maps for Templates:
+Now whenever there's an error caused by something in one of the templates, they create source maps that provide a meaningful context concerning the original template.	
 	
 	
 
