@@ -55,10 +55,10 @@ uppercase				✓	✓
 json					✓	✓
 limitTo					✓	✓
 lowercase				✓	✓
-number					✓	
 orderBy					✓	
 filter					✓	
-decimal						✓
+number					✓	
+DecimalPipe					✓		use number as keyword
 percent						✓
 async						✓
 

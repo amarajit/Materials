@@ -16,6 +16,10 @@ import { TodayDirective } from './today.directive';
 import { CustomDirectiveDemoComponent } from './custom-directive-demo/custom-directive-demo.component';
 import { WordCountPipe } from './word-count.pipe';
 import { CustomPipeDemoComponent } from './custom-pipe-demo/custom-pipe-demo.component';
+import { BuiltInPipesDemoComponent } from './built-in-pipes-demo/built-in-pipes-demo.component'
+import { BookStoreService } from './book-store.service';
+import { BookGridComponent } from './book-grid/book-grid.component';
+import { AddBookComponent } from './add-book/add-book.component';
 
 const appRoutes: Routes = [
   { path: '', component: EmployeeComponent },
@@ -23,6 +27,9 @@ const appRoutes: Routes = [
   { path: 'getEmp', component: DisplayEmployeeComponent },
   { path: 'customDir', component: CustomDirectiveDemoComponent },
   { path: 'customPipe', component: CustomPipeDemoComponent },
+  { path: 'builtInPipe', component: BuiltInPipesDemoComponent },
+  { path: 'books', component: BookGridComponent },
+  { path: 'addbook', component: AddBookComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -36,7 +43,10 @@ const appRoutes: Routes = [
     TodayDirective,
     CustomDirectiveDemoComponent,
     WordCountPipe,
-    CustomPipeDemoComponent
+    CustomPipeDemoComponent,
+    BuiltInPipesDemoComponent,
+    BookGridComponent,
+    AddBookComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -47,7 +57,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [GreetService,EmployeeService],
+  providers: [GreetService,EmployeeService,BookStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
