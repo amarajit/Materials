@@ -9,8 +9,11 @@ import { BookService } from './book.service';
 
 @NgModule({
   imports: [     
-        BrowserModule,
-		HttpModule
+      BrowserModule,
+	HttpModule
+  ],
+  exports:[
+
   ],
   declarations: [
         AppComponent,
